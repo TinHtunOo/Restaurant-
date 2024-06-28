@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grilli - Amazing & Delicious Food</title>
+    
+    <!-- meta -->
+    <meta name="title" content="Grilli - Amazing & Delicious Food">
+    <meta name="descriotion" content="This is a Restaurant html template made by codewithsadee">
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+hml">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- preload image -->
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+</head>
+<body class="">
+    <!-- PreLoad -->
+    <div class="preload " data-preload>
+        <div class="circle"></div>
+        <p class="text">Grilli</p>
+    </div>
+
+    <!-- TopBar -->
+    <div class="topbar">
+        <div class="topbar-container">
+            <div>
+                <div class="top-location">
+                    <div class="icon"><ion-icon name="location-outline" aria-hidden="true"></ion-icon></div>
+                    <span>Restaurant St, Delicious City, London 9578, UK</span>
+                </div>
+                <div class="separator"></div>
+                <div class="top-time">
+                    <div class="icon"><ion-icon name="time-outline" aria-hidden="true"></ion-icon></div>
+                    <span>Daily : 8.00 am to 10.00 pm</span>
+                </div>
+            </div>
+            <div>
+                <a class="top-call">
+                    <div class="icon"><ion-icon name="call-outline" aria-hidden="true"></ion-icon></div>
+                    <span>+1 123 456 7890 </span>
+                </a>
+                <div class="separator"></div>
+                <a class="top-mail">
+                    <div class="icon"><ion-icon name="mail-outline" aria-hidden="true"></ion-icon></div>
+                    <span>booking@restaurant.com</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- header -->
+    <header class="header">
+        <nav class="nav-bar">
+            <div><img src="./assets/images/logo.svg" alt="Grilli - Home"></div>
+            <ul class="nav-list">
+                <li class="nav-list-item onpage">
+                    <a href="#home">Home</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#menus">Menus</a>
+                    <div class="under-hover"></div>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#about">About Us</a>
+                    <div class="under-hover"></div>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#chef">Our Chef</a>
+                    <div class="under-hover"></div>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#content">Contact</a>
+                    <div class="under-hover"></div>
+                </li>
+            </ul>
+            <a class="btn">
+                    <span class="black-background"></span>
+                    <span class="btn-text-1">Find A Table</span>
+                    <span class="btn-text-2">Find A Table</span>
+    
+            </a>
+
+            <div class="menu-bar">
+                <div class="line-1 line"></div>
+                <div class="line-2 line" ></div>
+                <div class="line-3 line"></div>
+            </div>
+        </nav>
+
+        <!-- small nav -->
+        <div class="overlay">
+            <div class="nav-slider">
+                <div class="logo">
+                    <img src="./assets/images/logo.svg" alt="Grilli - Home">
+                    <div class="close-btn"><ion-icon name="close-outline" aria-hidden="true"></ion-icon></div>
+                </div>
+
+                <ul class="nav-small-list">
+                    <li class="nav-small-list-item onpage"><div class="separator"></div><a href="#home">Home</a></li>
+                    <li class="nav-small-list-item"><div class="separator-pop"></div><a href="#menus">Menus</a></li>
+                    <li class="nav-small-list-item"><div class="separator-pop"></div><a href="#about">About Us</a></li>
+                    <li class="nav-small-list-item"><div class="separator-pop"></div><a href="#chef">Our Chef</a></li>
+                    <li class="nav-small-list-item"><div class="separator-pop"></div><a href="#content">Contact</a></li>
+                </ul>
+                
+                <div class="info-nav-small">
+                    <span class="title-nav-small">Visit Us</span>
+                    <span>Restaurant St, Delicious City,<br>
+                        London 9578, UK
+                    </span>
+                    <span>Open: 9.30 am - 2.30pm</span>
+                    <span class="nav-small-mail">booking@grilli.com</span>
+                    <div class="separator"></div>
+                    <span>Booking Request</span>
+                    <span class="nav-small-phone">+88-123-123456</span>
+                    <div class="under-hover"></div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <!-- hero section -->
+
+    <section class="hero-slider">
+        <div class="slider active">
+
+            <div class="bg-img">
+                <img src="./assets/images/hero-slider-1.jpg" alt="">
+            </div>
+        
+            <div class="hero-text">
+                <span>Tradational & Hygine</span>
+                <h1>For the love of<br>
+                    delicious food</h1>
+                <p>Come with family & feel the joy of mouthwatering food</p> 
+                <a class="btn-secondary ">
+                    <span class="gold-background "></span>
+                    <span class="btn-he-text-1">View our Menu</span>
+                    <span class="btn-he-text-2">View our Menu</span>
+                </a>  
+            </div>
+            
+        </div>
+
+        <div class="slider">
+
+            <div class="bg-img">
+                <img src="./assets/images/hero-slider-2.jpg" alt="">
+            </div>
+        
+            <div class="hero-text">
+                <span>delightful experience</span>
+                <h1>Flavors Inspired by<br>
+                    the Seasons</h1>
+                <p>Come with family & feel the joy of mouthwatering food</p> 
+                <a class="btn-secondary ">
+                    <span class="gold-background "></span>
+                    <span class="btn-he-text-1">View our Menu</span>
+                    <span class="btn-he-text-2">View our Menu</span>
+                </a>  
+            </div>
+        
+        </div>
+
+        <div class="slider">
+
+            <div class="bg-img">
+                <img src="./assets/images/hero-slider-3.jpg" alt="">
+            </div>
+
+            <div class="hero-text">
+                <span>amazing & delicious</span>
+                <h1>Where every flavor<br>
+                    tells a story</h1>
+                <p>Come with family & feel the joy of mouthwatering food</p> 
+                <a class="btn-secondary ">
+                    <span class="gold-background "></span>
+                    <span class="btn-he-text-1">View our Menu</span>
+                    <span class="btn-he-text-2">View our Menu</span>
+                </a>  
+            </div>
+    
+        </div>
+
+        <button class="next-btn btn-holder"><ion-icon name="chevron-back"></ion-icon></button>
+        <button class="prev-btn btn-holder"><ion-icon name="chevron-forward"></ion-icon></button>
+
+        <div class="booking"></div>
+        <div class="booking-img">
+            <img src="./assets/images/hero-icon.png" alt="">
+            <span>
+                Book a Table
+            </span>
+        </div>
+
+    </section>
+
+    <!-- Service -->
+    <section class="container smokey-background">
+        <div class="max-width">
+            <div class="service-title">
+                Flavors For Royalty
+            </div>
+            <div class="service-title-2">
+                We Offer Top Notch
+            </div>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry 
+                lorem Ipsum has been the industrys standard dummy text ever.
+            </p>
+    
+            <div class="service-card-section">
+                <div class="service-card margin-top--300">
+                    <div class="service-img">
+                        <img class="service-pic" src="./assets/images/service-1.jpg" alt="">
+                    </div>
+                    <div class="service-text">
+                        <span>Breakfast</span>
+                        <div>
+                            <a href="#menu">View Menu</a>
+                            <div class="under-hover"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="./assets/images/service-2.jpg" alt="">
+                    </div>
+                    <div class="service-text">
+                        <span>Appetizers</span>
+                        <div>
+                            <a href="#menu">View Menu</a>
+                            <div class="under-hover"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card margin-top--300">
+                    <div class="service-img">
+                        <img src="./assets/images/service-3.jpg" alt="">
+                    </div>
+                    <div class="service-text">
+                        <span>Drinks</span>
+                        <div>
+                            <a href="#menu">View Menu</a>
+                            <div class="under-hover"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <img class="shape-1" src="./assets/images/shape-1.png" alt="">
+
+        <img class="shape-2" src="./assets/images/shape-2.png" alt="">
+    </section>
+
+    <!-- About -->
+
+    <section class="container original-background">
+
+        <div class="max-width">
+
+            <div class="about-section">
+
+                <div class="about-text">
+                    <span class="title">Our Story</span>
+                    <div class="title-1">Every Fla vor Tells a Story</div>
+                    <p class="para">Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem 
+                        Ipsum has been the industrys standard dummy text ever since the when an unknown printer 
+                        took a galley of type and scrambled it to make a type specimen book 
+                        It has survived not only five centuries, but also the leap into.
+                    </p>
+                    <div class="phone-box">
+                        <span class="phone-text">Book Through Call</span>
+                        <span class="phone">+80 (400) 123 4567</span>
+                        <div class="under-hover"></div>
+                    </div>
+                    <a class="btn-all">
+                        <span class="btn-down-cover"></span>
+                        <span class="btn-all-text">Read More</span>
+                        <span class="btn-all-text-2">Read More</span>   
+                    </a>
+
+                </div>
+
+                <div class="about-img">
+                    <img class="about-banner" src="./assets/images/about-banner.jpg" alt="">
+                    <div class="about-abs">
+                        <img class="abs-img" src="./assets/images/about-abs-image.jpg" alt="">
+                        <img class="background-abt" src="./assets/images/img-pattern.svg" alt="">
+                    </div>
+                    <div class="badge">
+                        <img class="badge-2" src="./assets/images/badge-2.png" alt="">
+                        <img class="badge-2-bg" src="./assets/images/badge-2-bg.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <img class="shape-3" src="./assets/images/shape-3.png" alt="">
+
+        </div>
+        
+    </section>
+
+    <!-- Special Dish -->
+     <section class="smokey-background">
+        <div class="max-width">
+
+            <div class="special-dish">
+
+                <img class="special-dish-img" src="./assets/images/special-dish-banner.jpg" alt="">
+                <div class="special-dish-text">
+                    <img class="badge-1" src="./assets/images/badge-1.png" alt="">
+                    <span class="title">Special Dish</span>
+                    <div class="title-1">Lobster Tortellini</div>
+                    <p class="para">Lorem Ipsum is simply dummy text of the printingand typesetting industry
+                         lorem Ipsum has been the industrys standard dummy text ever since the when an unknown 
+                         printer took a galley of type.
+                    </p>
+                    <div class="price-tag">
+                        <span class="price-grey">$40.00</span>
+                        <span class="price">$20.00</span>
+                    </div>
+                    <a class="btn-all">
+                        <span class="btn-down-cover"></span>
+                        <span class="btn-all-text">View All Menu</span>
+                        <span class="btn-all-text-2">View All Menu</span>   
+                    </a>
+                </div>
+                <img class="shape-4" src="./assets/images/shape-4.png" alt="">
+                <img class="shape-9" src="./assets/images/shape-9.png" alt="">
+
+            </div>
+
+        </div>
+     </section>
+
+    <!-- Special selection -->
+     <section class="container original-background">
+        <div class="max-width">
+
+            <div>
+                <span class="title">Special Selection</span>
+                <div class="title-1">Delicious Menu</div>
+            </div>
+            
+            <div class="special-selection">
+                <div class="selection-coloum">
+
+                    <div class="selection-product">
+                        <div class="selection-img">
+                            <img src="./assets/images/menu-1.png" alt="">
+                        </div>
+                        <div>
+                            <div class="selection-food">
+                                <span class="selection-menu">Greek Salad </span>
+                                <span class="selection-special">Seasonal</span>
+                                <span class="selection-space"></span>
+                                <span class="selection-price">$25.50</span>
+                            </div>
+                            <div class="selection-info">
+                                Tomatoes, green bell pepper, sliced cucumber onion, 
+                                olives, and feta cheese.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="selection-product">
+                        <div class="selection-img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="selection-text">
+                            <div class="selection-food"></div>
+                            <div class="selection-info"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div></div>
+            </div>
+        </div>
+     </section>
+
+    <!-- JS -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
