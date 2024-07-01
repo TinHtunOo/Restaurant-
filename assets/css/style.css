@@ -278,6 +278,8 @@ body.nav-active {
 
 .btn-all:hover .btn-all-text-2 { transform: translateY(0);}
 
+.text-gold { color: var(--gold-crayola); }
+
 /*-----------------------------------*\
   #PRELOAD
 \*-----------------------------------*/
@@ -1144,14 +1146,17 @@ body.nav-active {
 .selection-product {
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: space-between;
 }
 
 .selection-img {
+  width: 100px;
+  height: 100px;
   border-radius: 25px;
   overflow: hidden;
-  
 }
+
+.selection-img + div { width: 75% }
 
 .selection-img img { transition: all var(--transition-2); }
 
@@ -1196,7 +1201,58 @@ body.nav-active {
   font-size: var(--fontSize-label-1);
   color: var(--quick-silver);
   text-align: start;
+  line-height: var(--lineHeight-3);
 }
+
+.selection-coloum {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.special-selection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.center-line {
+  height: 450px;
+  border-left: 1px solid var(--white-alpha-20);
+  margin: 0 100px;
+}
+
+.special-selection + .para span { display: inline; } 
+
+.special-selection + .para { margin: auto; }
+
+.special-selection ~ .btn-all {
+  margin: 30px auto 0 auto;
+}
+
+.special-section {
+  position: relative;
+  z-index: 1;
+}
+
+.shape-5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: updown 3s alternate infinite;
+  z-index: 0;
+}
+
+.shape-6 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: updown 3s alternate infinite;
+  z-index: 0;
+}
+
 
 /*-----------------------------------*\
   #TESTIMONIALS
@@ -1236,6 +1292,9 @@ body.nav-active {
   .container {
     padding: 100px 100px;
   }
+
+  /* special selection */
+  .center-line { margin: 0 50px;}
 }
 
 
@@ -1272,6 +1331,11 @@ body.nav-active {
 
   .shape-2 { top: 700px }
 
+  /* special selection */
+
+  .center-line { display: none; }
+
+  .special-selection { gap: 30px; }
 }
 
 @media screen and (max-width: 960px) {
@@ -1515,8 +1579,28 @@ body.nav-active {
   animation: none;
   margin: 0;
   }
+
+  /* special selection */
+
+  .special-selection {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .selection-coloum {
+    width: 100%;
+    padding: 0 100px;
+  }
 }
 
+@media screen and (max-width: 700px) {
+  /* special selection */
+
+  .selection-coloum {
+    padding: 0 ;
+  }
+
+}
 
 @media screen and (max-width: 500px) {
   /* TOP _ BAR */
@@ -1561,4 +1645,21 @@ body.nav-active {
     width: 95%;
     margin-bottom: 30px;
   }
+
+   /* special selection */
+
+   .selection-food {
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
+   }
+
+   .selection-space { display: none; }
+
+   .selection-product { 
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  .selection-img + div { width:100%; }
 }
