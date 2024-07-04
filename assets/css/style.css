@@ -1263,8 +1263,7 @@ body.nav-active {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
-  z-index: 0;
+ 
 }
 
 .testimonial-content {
@@ -1308,12 +1307,38 @@ body.nav-active {
 /*-----------------------------------*\
   #RESERVATION
 \*-----------------------------------*/
-.reservation-form {
-  position: absolute;
-  height: 500px;
-  top: -200px;
-  z-index: 2;
+.reservation {
+  margin-top: -300px;
 }
+
+.reservation-form {
+  display: flex;
+  align-items: center;
+}
+
+.reservation-form-left {
+  width: 65%;
+}
+
+.reservation-form-right {
+  background-image: url('../images/form-pattern.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 35%;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.reservation-form-right .selection-info { 
+  font-size: var(--fontSize-body-4);
+  line-height: var(--lineHeight-3);
+  text-align: center; }
+
+
 
 
 /*-----------------------------------*\
