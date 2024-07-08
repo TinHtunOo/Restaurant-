@@ -1446,18 +1446,61 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   text-transform: uppercase;
   cursor: pointer;
 }
+
 #message {
   width: 100%;
   height: 150px;
   margin-bottom: 20px;
 }
 
+.shape-7 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 
 
 
 /*-----------------------------------*\
   #FEATURES
 \*-----------------------------------*/
+
+.feature-section { margin-top: -100px; }
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.feature-box {
+  width: 25%;
+  padding: 30px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.feature-box span {
+  font-family: var(--fontFamily-forum);
+  font-size: var(--fontSize-title-2);
+}
+
+.feature-box .selection-info { text-align: center; }
+
+.bg-black-1 { background-color: var(--eerie-black-3); }
+
+.bg-black-2 { background-color: var(--smoky-black-3); }
+
+.feature-box img { transition: all  var(--transition-2); }
+
+.feature-box:hover img { transform: rotate(180deg) scale(-1); }
+
+
 
 /*-----------------------------------*\
   #EVENT
@@ -1490,9 +1533,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .center-line { margin: 0 50px;}
 
   /* Reservation */
-  .form {
-    padding: 0 20px;
-  }
+  .form { padding: 0 20px; }
+
+  /* Feature */
+  .feature { gap: 20px; }
 }
 
 
@@ -1514,7 +1558,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   /* About */
   .shape-3 { display: none; }
 
-  
+  /* Reservation */
+  .shape-7 { display: none; }
+
+  /* Feature  */
+  .feature { flex-wrap: wrap; }
+
+  .feature-box { width: 48%; }
 }
 
 
@@ -1821,6 +1871,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .input-second-section { flex-direction: column; }
 
   .input-selector {width: 100%; }
+
+  /* Feature  */
+
+  .feature-box { width: 100%; }
 }
 
 @media screen and (max-width: 500px) {
