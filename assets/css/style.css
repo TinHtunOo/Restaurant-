@@ -1500,11 +1500,75 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .feature-box:hover img { transform: rotate(180deg) scale(-1); }
 
-
+.shape-8 {
+  position: absolute;
+  left: 0;
+  bottom: 90px;
+}
 
 /*-----------------------------------*\
   #EVENT
 \*-----------------------------------*/
+.event {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.event-card {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.event-img { 
+  position: relative;
+  transition: var(--transition-2);
+}
+
+.event-card:hover .event-img { transform: scale(1.15); }
+
+.event-date { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  padding: 5px 10px;
+  color: var(--gold-crayola);
+  background-color: var(--black);
+  font-weight: var(--weight-bold);
+  font-size: var(--fontSize-label-2);
+  letter-spacing: var(--letterSpacing-1);
+  line-height: 14px;
+}
+
+.event-text-section {
+  background-image: var(--gradient-1);
+  position: absolute;
+  bottom: 0;
+  padding: 20px 50px;
+}
+
+.event-title {
+  color: var(--gold-crayola);
+  text-transform: uppercase;
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--letterSpacing-2);
+  font-size: var(--fontSize-label-2);
+}
+
+.event-text {
+  color: var(--white);
+  font-family: var(--fontFamily-forum);
+  font-weight: var(--weight-regular);
+  line-height: var(--lineHeight-2);
+  font-size: var(--fontSize-title-2);
+}
+
+.event ~ .btn-all { margin: auto; }
+ 
 
 /*-----------------------------------*\
   #FOOTER
@@ -1565,6 +1629,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .feature { flex-wrap: wrap; }
 
   .feature-box { width: 48%; }
+
+  .shape-8 { display: none; }
 }
 
 
