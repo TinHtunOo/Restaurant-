@@ -1511,15 +1511,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 \*-----------------------------------*/
 .event {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin: 50px 0;
+  gap: 50px;
 }
 
 .event-card {
   position: relative;
-  width: fit-content;
-  height: fit-content;
   overflow: hidden;
 }
 
@@ -1573,7 +1572,143 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.footer-padding {
+  padding: 100px 50px;
+}
 
+.footer-link {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-list-item a {
+  color: var(--quick-silver);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing-4);
+  font-size: var(--fontSize-label-2);
+  transition: var(--transition-1);
+}
+.footer-list-item { width: fit-content; }
+
+.footer-list-item a:hover { color: var(--gold-crayola); }
+
+.footer-list-item a:hover ~ .under-hover { width: 100%; }
+
+.footer-content {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--smoky-black-1);
+}
+
+.footer-content::before {
+  position: absolute;
+  display: block;
+  content: url("../images/footer-form-pattern.svg");
+  width: 15px;
+  z-index: 1;
+  left: 0;
+}
+
+.footer-content::after {
+  position: absolute;
+  display: block;
+  content: url("../images/footer-form-pattern.svg");
+  width: 15px;
+  z-index: 1;
+  right: 0;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 100px 50px;
+  background-image: url("../images/footer-form-bg.png");
+  background-position: center;
+  object-fit: cover;
+}
+
+.footer-form-link, .footer-text {
+  color: var(--quick-silver);
+  font-size: var(--fontSize-body-4);
+}
+
+
+.footer-form-link a:hover {
+  color: var(--gold-crayola);
+}
+
+.footer-title > span{
+  color: var(--white);
+  font-family: var(--fontFamily-forum);
+  font-weight: var(--weight-regular);
+  font-size: var(--fontSize-title-1);
+}
+
+.footer-title > div {
+  font-size: var(--fontSize-label-1);
+  color: var(--quick-silver);
+} 
+
+.footer-title > div span {
+  display: inline ;
+  color: var(--white);
+} 
+
+.footer-email-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.footer-email-section ion-icon {
+  position: absolute;
+  left: 20px;
+}
+
+.footer-email-part {
+  display: flex;
+  align-items: center;
+}
+
+.footer-email { 
+  color: var(--white);
+  padding: 10px 10px 10px 50px ;
+  background-color: var(--eerie-black-2);
+  border: 2px solid var(--white-alpha-10);
+  border-right: 0px;
+}
+
+.footer-email::placeholder { color: var(--white); }
+
+.footer-email:focus { border-color: var(--gold-crayola); }
+
+.footer-text { 
+  text-align: center;
+  margin-top: 100px;
+ }
+
+.footer-section {
+  background-image: url(../images/footer-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
+}
+ 
 /*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
@@ -1653,6 +1788,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   /* Reservation */
   #person, #time, .date { padding-left: 40px;}
+
+  /* Event */
+  .event { 
+    justify-content: center;
+    flex-wrap: wrap; }
 }
 
 @media screen and (max-width: 960px) {
@@ -1920,6 +2060,32 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .reservation-form-right {
     width: 100%;
   }
+
+  /* Footer */
+
+  .footer{ 
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+
+  .footer-content { 
+    order: -1;
+    width: 100%;
+  }
+
+  .footer-form { 
+    padding: 50px;
+    width: 100%;}
+
+    .footer-text {
+      margin-top: 50px;
+    }
+
+    .footer-padding {
+      padding: 20px;
+    }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -2004,4 +2170,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .selection-img + div { width:100%; }
 
   .selection-info { text-align: center; }
+
+  /* Footer */
+  .footer-link { gap: 10px;}
+
+  .footer-email-part {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-email-part {
+    width: 100%;
+  }
+  .footer-email-section {
+    width: 100%;
+    border: 2px solid var(--white-alpha-10);
+  }
+
+  .footer-email-part .btn-all { width: 100%; }
 }
